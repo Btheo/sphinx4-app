@@ -53,9 +53,6 @@
     <component name="recognizer" type="edu.cmu.sphinx.recognizer.Recognizer">
         <property name="decoder" value="decoder"/>
         <propertylist name="monitors">
-            <item>accuracyTracker</item>
-            <item>speedTracker</item>
-            <item>recognizeMonitor</item>
         </propertylist>
     </component>
 
@@ -156,7 +153,7 @@
     <!-- The Dictionary configuration                            -->
     <!-- ******************************************************** -->
 
-    <component name="dictionary" type="edu.cmu.sphinx.linguist.dictionary.Dictionary">
+    <component name="dictionary" type="edu.cmu.sphinx.linguist.dictionary.TextDictionary">
 	<property name="dictionaryPath" value="resource:/lium/frenchWords62K.dic"/>
 	<property name="fillerPath" value="resource:/lium/hmm/noisedict"/>
         <property name="addSilEndingPronunciation" value="true"/>
